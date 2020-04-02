@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreImage
 
 class ActionCell: UITableViewCell {
 	@IBOutlet weak var buttonView: UIView!
@@ -15,15 +14,15 @@ class ActionCell: UITableViewCell {
 	@IBOutlet weak var title: UILabel!
 	@IBOutlet weak var subtitle: UILabel!
 	
+	var test = false
 	@IBOutlet weak var icon: UIImageView!
-	
+	var action: Action?
 	let unifiedCornerRadius = CGFloat(10.0)
 	
 	var colors: [CGColor]?
 	
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 	
 	override func layoutSubviews() {
@@ -33,6 +32,11 @@ class ActionCell: UITableViewCell {
 		setUpSideViewGradient()
 		setUpSideViewShadow()
 	}
+//	override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+//		if motion == .motionShake {
+//			shakeLabel.text = "Shaken, not stirred"
+//		}
+//	}
 	
 	func setUpSideViewShadow() {
 		sideView.layer.masksToBounds = true
@@ -64,7 +68,6 @@ class ActionCell: UITableViewCell {
 
 	}
 	
-	
 	func getGradientViewFromColors() -> UIView {
 		let gradient = CAGradientLayer()
 		gradient.frame = sideView.bounds
@@ -81,6 +84,22 @@ class ActionCell: UITableViewCell {
 		return gradientView
 	}
 	
+	func setUpButton(action: Action) {
+		title.text = action.title
+		subtitle.text = action.subtitle
+		icon.image = action.image
+		colors = action.colorHEXs
+	}
+	
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+}
+
+
+
 //	func getShadowLayer(shadowBounds: CGRect, shadowColor: CGColor) -> CALayer {
 //		let shadowLayer = CAShapeLayer()
 //		shadowLayer.path = UIBezierPath(roundedRect: shadowBounds, cornerRadius: unifiedCornerRadius).cgPath
@@ -91,23 +110,3 @@ class ActionCell: UITableViewCell {
 //		shadowLayer.shadowRadius = 3
 //		return shadowLayer
 //	}
-	
-	func setUpButton(titleString: String, subtitle: String, image: UIImage, colors: [CGColor]) {
-		self.title.text = titleString
-		self.subtitle.text = subtitle
-		icon.image = image
-		self.colors = colors
-	}
-	
-	func showClickAnimation(completion: @escaping () -> ()) {
-		
-	}
-	
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
-	
-}
