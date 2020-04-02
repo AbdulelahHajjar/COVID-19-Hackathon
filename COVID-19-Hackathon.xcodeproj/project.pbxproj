@@ -21,6 +21,7 @@
 		EB1C0B67243275DE0038C3F4 /* COVID_19_HackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C0B66243275DE0038C3F4 /* COVID_19_HackathonUITests.swift */; };
 		EB1C0B75243276650038C3F4 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C0B74243276650038C3F4 /* LocationManager.swift */; };
 		EB1C0B7724327A1E0038C3F4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C0B7624327A1E0038C3F4 /* Location.swift */; };
+		EB2628E124362A49003ED304 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2628E024362A49003ED304 /* Action.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		EB1C0B68243275DE0038C3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB1C0B74243276650038C3F4 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		EB1C0B7624327A1E0038C3F4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EB2628E024362A49003ED304 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 			children = (
 				EB1C0B74243276650038C3F4 /* LocationManager.swift */,
 				EB1C0B7624327A1E0038C3F4 /* Location.swift */,
+				EB2628E024362A49003ED304 /* Action.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				EB1C0B75243276650038C3F4 /* LocationManager.swift in Sources */,
 				EB12B76B2432A0BD00A17720 /* MainVC.swift in Sources */,
 				EB1C0B7724327A1E0038C3F4 /* Location.swift in Sources */,
+				EB2628E124362A49003ED304 /* Action.swift in Sources */,
 				EB1C0B45243275DC0038C3F4 /* AppDelegate.swift in Sources */,
 				EB1C0B47243275DC0038C3F4 /* SceneDelegate.swift in Sources */,
 			);
