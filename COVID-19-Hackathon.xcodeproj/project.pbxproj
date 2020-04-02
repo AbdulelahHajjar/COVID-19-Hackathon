@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB03D3ED2435149E007DE097 /* MainTBVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB03D3EC2435149D007DE097 /* MainTBVC.swift */; };
 		EB12B76B2432A0BD00A17720 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12B76A2432A0BD00A17720 /* MainVC.swift */; };
 		EB12B76E2432A43300A17720 /* DashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB12B76C2432A43300A17720 /* DashboardCell.swift */; };
 		EB12B76F2432A43300A17720 /* DashboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB12B76D2432A43300A17720 /* DashboardCell.xib */; };
@@ -15,7 +14,6 @@
 		EB12B7752432B93F00A17720 /* ActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB12B7732432B93F00A17720 /* ActionCell.xib */; };
 		EB1C0B45243275DC0038C3F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C0B44243275DC0038C3F4 /* AppDelegate.swift */; };
 		EB1C0B47243275DC0038C3F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C0B46243275DC0038C3F4 /* SceneDelegate.swift */; };
-		EB1C0B49243275DC0038C3F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C0B48243275DC0038C3F4 /* ViewController.swift */; };
 		EB1C0B4C243275DC0038C3F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1C0B4A243275DC0038C3F4 /* Main.storyboard */; };
 		EB1C0B4E243275DD0038C3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1C0B4D243275DD0038C3F4 /* Assets.xcassets */; };
 		EB1C0B51243275DD0038C3F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB1C0B4F243275DD0038C3F4 /* LaunchScreen.storyboard */; };
@@ -43,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EB03D3EC2435149D007DE097 /* MainTBVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTBVC.swift; sourceTree = "<group>"; };
 		EB12B76A2432A0BD00A17720 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		EB12B76C2432A43300A17720 /* DashboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCell.swift; sourceTree = "<group>"; };
 		EB12B76D2432A43300A17720 /* DashboardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCell.xib; sourceTree = "<group>"; };
@@ -52,7 +49,6 @@
 		EB1C0B41243275DC0038C3F4 /* COVID-19-Hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "COVID-19-Hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1C0B44243275DC0038C3F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB1C0B46243275DC0038C3F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EB1C0B48243275DC0038C3F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB1C0B4B243275DC0038C3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB1C0B4D243275DD0038C3F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB1C0B50243275DD0038C3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,13 +124,9 @@
 			children = (
 				EB1C0B44243275DC0038C3F4 /* AppDelegate.swift */,
 				EB1C0B46243275DC0038C3F4 /* SceneDelegate.swift */,
-				EB1C0B48243275DC0038C3F4 /* ViewController.swift */,
-				EB1C0B74243276650038C3F4 /* LocationManager.swift */,
-				EB1C0B7624327A1E0038C3F4 /* Location.swift */,
-				EB12B76A2432A0BD00A17720 /* MainVC.swift */,
-				EB03D3EC2435149D007DE097 /* MainTBVC.swift */,
-				EB12B7712432B8F800A17720 /* CustomCells */,
-				EB1C0B4A243275DC0038C3F4 /* Main.storyboard */,
+				EB2628DF243629DF003ED304 /* Model */,
+				EB2628DD2436299D003ED304 /* Controller */,
+				EB2628DC24362989003ED304 /* View */,
 				EB1C0B4D243275DD0038C3F4 /* Assets.xcassets */,
 				EB1C0B4F243275DD0038C3F4 /* LaunchScreen.storyboard */,
 				EB1C0B52243275DD0038C3F4 /* Info.plist */,
@@ -158,6 +150,32 @@
 				EB1C0B68243275DE0038C3F4 /* Info.plist */,
 			);
 			path = "COVID-19-HackathonUITests";
+			sourceTree = "<group>";
+		};
+		EB2628DC24362989003ED304 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C0B4A243275DC0038C3F4 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB2628DD2436299D003ED304 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB12B76A2432A0BD00A17720 /* MainVC.swift */,
+				EB12B7712432B8F800A17720 /* CustomCells */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB2628DF243629DF003ED304 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C0B74243276650038C3F4 /* LocationManager.swift */,
+				EB1C0B7624327A1E0038C3F4 /* Location.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,12 +311,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB03D3ED2435149E007DE097 /* MainTBVC.swift in Sources */,
 				EB12B76E2432A43300A17720 /* DashboardCell.swift in Sources */,
 				EB12B7742432B93F00A17720 /* ActionCell.swift in Sources */,
 				EB1C0B75243276650038C3F4 /* LocationManager.swift in Sources */,
 				EB12B76B2432A0BD00A17720 /* MainVC.swift in Sources */,
-				EB1C0B49243275DC0038C3F4 /* ViewController.swift in Sources */,
 				EB1C0B7724327A1E0038C3F4 /* Location.swift in Sources */,
 				EB1C0B45243275DC0038C3F4 /* AppDelegate.swift in Sources */,
 				EB1C0B47243275DC0038C3F4 /* SceneDelegate.swift in Sources */,
